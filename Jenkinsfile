@@ -8,12 +8,12 @@ pipeline {
         }
         stage('Build') {
             steps {
-                powershell 'mvn clean package'
+                sh 'mvn clean package'
             }
         }
         stage('Test') {
             steps {
-                powershell 'mvn test'
+                sh 'mvn test'
             }
         }
     }
