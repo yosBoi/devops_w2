@@ -12,6 +12,7 @@ pipeline {
         stage('Build') {
             steps {
 				bat 'mvn -v'
+				bat 'java --version'
 				echo "$PATH"
                 bat 'mvn clean package'
             }
