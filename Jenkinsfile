@@ -1,7 +1,7 @@
 pipeline {
     agent any
 	environment {
-		PATH = "C:/.NET & Java Software/apache-maven-3.6.3-bin/apache-maven-3.6.3/bin"}
+		PATH = "C:/.NET & Java Software/apache-maven-3.6.3-bin/apache-maven-3.6.3/bin:${env.PATH}"}
     stages {
         stage('Checkout') {
             steps {
