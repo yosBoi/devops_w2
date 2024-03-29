@@ -19,6 +19,7 @@ pipeline {
         }
         stage('Test') {
             steps {
+				echo "asd"
                 //bat 'mvn test'
             }
         }
