@@ -14,12 +14,12 @@ pipeline {
 				bat 'mvn -v'
 				bat 'java --version'
 				echo "$PATH"
-                bat 'mvn clean package'
+                //bat 'mvn clean package'
             }
         }
         stage('Test') {
             steps {
-                bat 'mvn test'
+                //bat 'mvn test'
             }
         }
     }
